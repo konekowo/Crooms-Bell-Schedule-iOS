@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD031FD82C03C32000951B88 /* bellschedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD031FD72C03C32000951B88 /* bellschedApp.swift */; };
+		FD031FDA2C03C32000951B88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD031FD92C03C32000951B88 /* ContentView.swift */; };
+		FD031FDC2C03C32200951B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD031FDB2C03C32200951B88 /* Assets.xcassets */; };
+		FD031FDF2C03C32200951B88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD031FDE2C03C32200951B88 /* Preview Assets.xcassets */; };
+		FD5578482C04C4B80085A640 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5578472C04C4B80085A640 /* WidgetKit.framework */; };
+		FD55784A2C04C4B80085A640 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5578492C04C4B80085A640 /* SwiftUI.framework */; };
+		FD55784D2C04C4B80085A640 /* bellschedWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55784C2C04C4B80085A640 /* bellschedWidgetBundle.swift */; };
+		FD55784F2C04C4B80085A640 /* bellschedWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55784E2C04C4B80085A640 /* bellschedWidgetLiveActivity.swift */; };
+		FD5578512C04C4B80085A640 /* bellschedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5578502C04C4B80085A640 /* bellschedWidget.swift */; };
+		FD5578552C04C4BB0085A640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5578542C04C4BB0085A640 /* Assets.xcassets */; };
+		FD5578592C04C4BB0085A640 /* bellschedWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FD5578452C04C4B80085A640 /* bellschedWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD5578622C06073A0085A640 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5578612C06073A0085A640 /* AppIntent.swift */; };
+		FD5578632C06073A0085A640 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5578612C06073A0085A640 /* AppIntent.swift */; };
+		FD5578652C0622510085A640 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5578642C0622510085A640 /* DataFetcher.swift */; };
+		FD5578662C0622510085A640 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5578642C0622510085A640 /* DataFetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD5578572C04C4BB0085A640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD031FCC2C03C31F00951B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5578442C04C4B80085A640;
+			remoteInfo = bellschedWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD55785A2C04C4BB0085A640 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD5578592C04C4BB0085A640 /* bellschedWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD031FD42C03C32000951B88 /* bellsched.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bellsched.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD031FD72C03C32000951B88 /* bellschedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bellschedApp.swift; sourceTree = "<group>"; };
+		FD031FD92C03C32000951B88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD031FDB2C03C32200951B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD031FDE2C03C32200951B88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD5578452C04C4B80085A640 /* bellschedWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = bellschedWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5578472C04C4B80085A640 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FD5578492C04C4B80085A640 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FD55784C2C04C4B80085A640 /* bellschedWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bellschedWidgetBundle.swift; sourceTree = "<group>"; };
+		FD55784E2C04C4B80085A640 /* bellschedWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bellschedWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		FD5578502C04C4B80085A640 /* bellschedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bellschedWidget.swift; sourceTree = "<group>"; };
+		FD5578542C04C4BB0085A640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD5578562C04C4BB0085A640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5578612C06073A0085A640 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		FD5578642C0622510085A640 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD031FD12C03C31F00951B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5578422C04C4B80085A640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD55784A2C04C4B80085A640 /* SwiftUI.framework in Frameworks */,
+				FD5578482C04C4B80085A640 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD031FCB2C03C31F00951B88 = {
+			isa = PBXGroup;
+			children = (
+				FD031FD62C03C32000951B88 /* bellsched */,
+				FD55784B2C04C4B80085A640 /* bellschedWidget */,
+				FD5578462C04C4B80085A640 /* Frameworks */,
+				FD031FD52C03C32000951B88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD031FD52C03C32000951B88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD031FD42C03C32000951B88 /* bellsched.app */,
+				FD5578452C04C4B80085A640 /* bellschedWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD031FD62C03C32000951B88 /* bellsched */ = {
+			isa = PBXGroup;
+			children = (
+				FD031FD72C03C32000951B88 /* bellschedApp.swift */,
+				FD031FD92C03C32000951B88 /* ContentView.swift */,
+				FD031FDB2C03C32200951B88 /* Assets.xcassets */,
+				FD031FDD2C03C32200951B88 /* Preview Content */,
+			);
+			path = bellsched;
+			sourceTree = "<group>";
+		};
+		FD031FDD2C03C32200951B88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD031FDE2C03C32200951B88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD5578462C04C4B80085A640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD5578472C04C4B80085A640 /* WidgetKit.framework */,
+				FD5578492C04C4B80085A640 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD55784B2C04C4B80085A640 /* bellschedWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD55784C2C04C4B80085A640 /* bellschedWidgetBundle.swift */,
+				FD55784E2C04C4B80085A640 /* bellschedWidgetLiveActivity.swift */,
+				FD5578502C04C4B80085A640 /* bellschedWidget.swift */,
+				FD5578542C04C4BB0085A640 /* Assets.xcassets */,
+				FD5578562C04C4BB0085A640 /* Info.plist */,
+				FD5578612C06073A0085A640 /* AppIntent.swift */,
+				FD5578642C0622510085A640 /* DataFetcher.swift */,
+			);
+			path = bellschedWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD031FD32C03C31F00951B88 /* bellsched */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD031FE22C03C32200951B88 /* Build configuration list for PBXNativeTarget "bellsched" */;
+			buildPhases = (
+				FD031FD02C03C31F00951B88 /* Sources */,
+				FD031FD12C03C31F00951B88 /* Frameworks */,
+				FD031FD22C03C31F00951B88 /* Resources */,
+				FD55785A2C04C4BB0085A640 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5578582C04C4BB0085A640 /* PBXTargetDependency */,
+			);
+			name = bellsched;
+			productName = bellsched;
+			productReference = FD031FD42C03C32000951B88 /* bellsched.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD5578442C04C4B80085A640 /* bellschedWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD55785D2C04C4BB0085A640 /* Build configuration list for PBXNativeTarget "bellschedWidgetExtension" */;
+			buildPhases = (
+				FD5578412C04C4B80085A640 /* Sources */,
+				FD5578422C04C4B80085A640 /* Frameworks */,
+				FD5578432C04C4B80085A640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bellschedWidgetExtension;
+			productName = bellschedWidgetExtension;
+			productReference = FD5578452C04C4B80085A640 /* bellschedWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD031FCC2C03C31F00951B88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FD031FD32C03C31F00951B88 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FD5578442C04C4B80085A640 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FD031FCF2C03C31F00951B88 /* Build configuration list for PBXProject "bellsched" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD031FCB2C03C31F00951B88;
+			productRefGroup = FD031FD52C03C32000951B88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD031FD32C03C31F00951B88 /* bellsched */,
+				FD5578442C04C4B80085A640 /* bellschedWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD031FD22C03C31F00951B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD031FDF2C03C32200951B88 /* Preview Assets.xcassets in Resources */,
+				FD031FDC2C03C32200951B88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5578432C04C4B80085A640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5578552C04C4BB0085A640 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD031FD02C03C31F00951B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD031FDA2C03C32000951B88 /* ContentView.swift in Sources */,
+				FD031FD82C03C32000951B88 /* bellschedApp.swift in Sources */,
+				FD5578622C06073A0085A640 /* AppIntent.swift in Sources */,
+				FD5578652C0622510085A640 /* DataFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5578412C04C4B80085A640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5578662C0622510085A640 /* DataFetcher.swift in Sources */,
+				FD55784D2C04C4B80085A640 /* bellschedWidgetBundle.swift in Sources */,
+				FD5578632C06073A0085A640 /* AppIntent.swift in Sources */,
+				FD5578512C04C4B80085A640 /* bellschedWidget.swift in Sources */,
+				FD55784F2C04C4B80085A640 /* bellschedWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5578582C04C4BB0085A640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5578442C04C4B80085A640 /* bellschedWidgetExtension */;
+			targetProxy = FD5578572C04C4BB0085A640 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD031FE02C03C32200951B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD031FE12C03C32200951B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD031FE32C03C32200951B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bellsched/Preview Content\"";
+				DEVELOPMENT_TEAM = T3F9D6G69M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CBSH;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = croomsbellsched.bellsched;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD031FE42C03C32200951B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bellsched/Preview Content\"";
+				DEVELOPMENT_TEAM = T3F9D6G69M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CBSH;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = croomsbellsched.bellsched;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD55785B2C04C4BB0085A640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3F9D6G69M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bellschedWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = bellschedWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = croomsbellsched.bellsched.bellschedWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD55785C2C04C4BB0085A640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3F9D6G69M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bellschedWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = bellschedWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = croomsbellsched.bellsched.bellschedWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD031FCF2C03C31F00951B88 /* Build configuration list for PBXProject "bellsched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD031FE02C03C32200951B88 /* Debug */,
+				FD031FE12C03C32200951B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD031FE22C03C32200951B88 /* Build configuration list for PBXNativeTarget "bellsched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD031FE32C03C32200951B88 /* Debug */,
+				FD031FE42C03C32200951B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD55785D2C04C4BB0085A640 /* Build configuration list for PBXNativeTarget "bellschedWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD55785B2C04C4BB0085A640 /* Debug */,
+				FD55785C2C04C4BB0085A640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD031FCC2C03C31F00951B88 /* Project object */;
+}
