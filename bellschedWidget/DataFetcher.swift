@@ -85,6 +85,8 @@ func convertPeriodIntToString(period: Int) -> String {
         periodString = "End"
     case 200:
         periodString = "Walk To Class"
+    case 201:
+        periodString = "Holiday"
     default:
         periodString = ""
     }

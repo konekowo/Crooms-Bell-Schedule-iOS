@@ -65,7 +65,7 @@ struct bellschedWidgetEntryView : View {
         case "activity":
             return wigitData.activity.msg
         default:
-            return ""
+            return "There is NO school today!"
         }
     }
     
@@ -110,6 +110,7 @@ struct bellschedWidgetEntryView : View {
                 let distance: TimeInterval
             }
             var distances: [nearestEvent] = []
+            var distancesNegative: [nearestEvent] = []
             for period in periods {
                 let converted = convertDayEvent(eventData: period)
                 let startComponents = DateComponents(year: currentDateComponents.year, month: currentDateComponents.month, day: currentDateComponents.day, hour: converted.startHour, minute: converted.startMin)
@@ -119,13 +120,17 @@ struct bellschedWidgetEntryView : View {
                 if (entry.date.distance(to: startTime) > 0){
                     distances.append(nearestEvent(event: converted, distance: entry.date.distance(to: startTime)))
                 }
+                if (entry.date.distance(to: startTime) < 0){
+                    distancesNegative.append(nearestEvent(event: converted, distance: entry.date.distance(to: startTime)))
+                }
                 if (entry.date > startTime && entry.date < endTime){
                     return converted
                 }
                 
             }
             distances.sort(by: {$0.distance < $1.distance})
-            return DayEvent(startHour: 0, startMin: 0, period: 200, endHour: distances[0].event.startHour, endMin: distances[0].event.startMin)
+            distancesNegative.sort(by: {$0.distance > $1.distance})
+            return DayEvent(startHour: distancesNegative[0].event.endHour, startMin: distancesNegative[0].event.endMin, period: 200, endHour: distances[0].event.startHour, endMin: distances[0].event.startMin)
         }
         switch dayType {
         case "normal":
@@ -137,7 +142,7 @@ struct bellschedWidgetEntryView : View {
         case "activity":
             dayEvent = findCurrentPeriod(periods: wigitData.activity.sched[DataCache.shared.configuration!.aLunch ? 0 : 1])
         default:
-            dayEvent = nil
+            dayEvent = DayEvent(startHour: 0, startMin: 0, period: 201, endHour: 23, endMin: 59)
         }
         
         return dayEvent
